@@ -28,12 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            CenterButton = new Button();
+            SuspendLayout();
+            // 
+            // CenterButton
+            // 
+            CenterButton.BackColor = Color.OrangeRed;
+            CenterButton.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            CenterButton.Location = new Point(460, 206);
+            CenterButton.Margin = new Padding(3, 2, 3, 2);
+            CenterButton.Name = "CenterButton";
+            CenterButton.Size = new Size(262, 206);
+            CenterButton.TabIndex = 0;
+            CenterButton.Text = "złap mnie";
+            CenterButton.UseVisualStyleBackColor = false;
+            CenterButton.Click += CenterButton_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 14F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1159, 618);
+            Controls.Add(CenterButton);
+            Font = new Font("Algerian", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button CenterButton;
     }
 }
